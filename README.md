@@ -10,8 +10,8 @@ Live Demo: https:
 **HTML5**: Provides the structure of the web application.   
 **CSS3**: Styles the application, making it visually appealing and user-friendly.   
 **JavaScript (ES6)**: Adds interactivity and dynamic functionality to the application. 
-**React** : Provides a declarative and component-based approach to creating interactive and dynamic functionality to Application
-**Vite**:  Improves the front-end development experience. It provides a faster and leaner development environment for modern web project
+**React** : Provides a declarative and component-based approach to creating interactive and dynamic functionality to Application.
+**Vite**:  Improves the front-end development experience. It provides a faster and leaner development environment for modern web project.
 
 #### Storage
 **Local Storage**: Stores tasks in the browser's local storage to ensure persistence across sessions.   
