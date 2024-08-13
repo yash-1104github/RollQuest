@@ -13,6 +13,7 @@ return (
   {  
     isGameStarted ? <GamePlay/> : <StartGame toggle = {toggleGamePlay }/>  
   }
+ 
 </>
 )};
 

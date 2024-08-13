@@ -10,6 +10,7 @@ const GamePlay = () => {
   const [score, setScore] = useState(0);
   const [selectedNumber, setSelectedNumber] = useState();
   const [currentDice, setCurrentDice] = useState(1);
+    //Generate random number b/w 1 - 6
   const generateRandomNumber = (min, max) => {
     // console.log(Math.floor(Math.random() * (max - min) + min) );
     return Math.floor(Math.random() * (max - min) + min);
@@ -18,18 +19,17 @@ const GamePlay = () => {
   const [error, setError] = useState("");
   const [showRules, setShowRules] = useState(false);
 
-  //Function if no button is selected
+  //Function for rolling dice show error & generate number  
   const roleDice = () => {
     if (!selectedNumber) {
       setError("You have not selected any number");
       return;
     }
-
     //Function to return Random number b/w 1&6
     const randomNumber = generateRandomNumber(1, 7);
     setCurrentDice((prev) => randomNumber);
 
-    //how score while we change
+    //Function to update score
     if (selectedNumber === randomNumber) {
       setScore((prev) => prev + randomNumber);
     } else {

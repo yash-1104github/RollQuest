@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "dice-game": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "styled-components": "^6.1.11"
@@ -25,6 +26,6 @@
     "vite": "^5.3.1"
   },
   "resolutions": {
-    "styled-components" : "^5"
+    "styled-components": "^5"
   }
 }
