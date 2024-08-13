@@ -46,21 +46,21 @@ const NumberSelectorContainer = styled.div`
     color: red;
   }
   @media (max-width: 768px) {
-    align-items: center; /* Center the content on smaller screens */
+    align-items: center; 
 
     p {
-      font-size: 20px; /* Adjust font size for tablets */
+      font-size: 20px; 
     }
 
     .flex {
-      gap: 16px; /* Reduce gap between boxes */
-      flex-wrap: wrap; /* Allow the boxes to wrap to the next line if needed */
+      gap: 16px; 
+      flex-wrap: wrap; 
     }
   }
 
   @media (max-width: 480px) {
     p {
-      font-size: 18px; /* Further reduce font size for mobile */
+      font-size: 18px; 
     }
 
     .flex {
