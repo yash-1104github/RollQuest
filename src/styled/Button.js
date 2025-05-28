@@ -7,7 +7,7 @@ export const Button = styled.button`
   border-radius: 5px;
   min-width: 220px;
   border: none;
-  font-size: 16px;
+  font-size: 20px;
   border: 1px solid transparent;
   transition: 0.4s backgound ease-in;
   cursor: pointer;

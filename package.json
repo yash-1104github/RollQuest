@@ -13,6 +13,7 @@
     "dice-game": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^7.6.1",
     "styled-components": "^6.1.11"
   },
   "devDependencies": {
@@ -27,5 +28,17 @@
   },
   "resolutions": {
     "styled-components": "^5"
-  }
+  },
+  "description": "## RollQuest Welcome to the RollQuest - Game Application! This project is a simple yet effective, built with HTML, CSS,  JavaScript , React and Vite.",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yash-1104github/RollQuest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yash-1104github/RollQuest/issues"
+  },
+  "homepage": "https://github.com/yash-1104github/RollQuest#readme"
 }

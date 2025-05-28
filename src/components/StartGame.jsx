@@ -1,20 +1,26 @@
-import styled from 'styled-components';
-import { Button } from '../styled/Button';
+import styled from "styled-components";
+import { Button } from "../styled/Button";
+import { Link } from "react-router-dom";
+import React from "react";
 
-const StartGame = ( {toggle}) => {
+
+const StartGame = () => {
   return (
     <Container>
-       <div>
-        <img src = "/images/dices.png"/>
-       </div>
+      <div>
+        <img src="/images/dices.png" />
+      </div>
       <div className="content">
         <h1>Dice Game</h1>
-        <Button onClick ={toggle}>Play Now</Button>
+        <Link to="/gameplay">
+          <Button>Start Game</Button>
+        </Link>
       </div>
     </Container>
-)};
+  );
+};
 
-export default StartGame
+export default StartGame;
 
 const Container = styled.div`
   max-width: 1180px;
@@ -26,9 +32,22 @@ const Container = styled.div`
   padding: 0 16px;
 
   .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 32px;
+
     h1 {
       font-size: 96px;
+      font-weight: 700;
       white-space: nowrap;
+      margin-bottom: 24px;
+      color: #333;
+      letter-spacing: 4px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
     }
   }
 
@@ -41,7 +60,7 @@ const Container = styled.div`
       }
     }
     img {
-      max-width: 80%;
+      max-width: 70%;
       height: auto;
     }
   }
@@ -51,8 +70,9 @@ const Container = styled.div`
         font-size: 36px;
       }
       Button {
-        font-size: 16px;
+        font-size: 20px;
         padding: 8px 16px;
+
       }
     }
 
@@ -62,6 +82,3 @@ const Container = styled.div`
     }
   }
 `;
-
-
-
